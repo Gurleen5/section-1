@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <style>
+        :root{
+            --theme-color: blueviolet;
+            --accent-color: #d1aaeb;
+        }
+        *{
+            font-family: Montserrat;
+        }
+        .card{
+            
+            width: 20%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: white;
+
+
+        }
+        body{
+            
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            /*background-color: var(--accent-color);*/
+            background-image: url('https://static.vecteezy.com/system/resources/previews/007/780/526/non_2x/abstract-colorful-background-blurred-gradient-pastel-colors-palette-for-wallpaper-soft-gradient-in-blue-purple-cyan-and-pink-vector.jpg');
+            margin: 0px;
+
+        }
+        .form-title{
+            text-align: center;
+            font-family:Montserrat;
+        }
+        .text-input,.submit-btn{
+
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .text-input{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid var(--theme-color);
+            background-color: var(--accent-color);
+
+        }
+        .submit-btn{
+            padding: 5px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+        .link{
+            color: var(--theme-color);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .signup-link{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em ;
+            font-weight: bold;
+        }
+        .brand{
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--theme-color);
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2 class="brand">Brand Name</h2>
+
+        <h3 class="form-title">Login Form</h3>
+
+        <form>
+            <label for="Email">Email Address</label>
+            <input class="text-input" id="email" type="email">
+
+            <label for="Password">Password</label>
+            <input class="text-input" id="password" type="password">
+            <a href="#" class="link forgot-link">Forgot Password</a>
+            <button class="submit-btn">Submit</button>
+            <a href="#" class=" link signup-link">Not registered yet? Signup</a>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        :root{
+            --theme-color: brown;
+            --accent-color:#e4b2b2;
+
+        }
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contact{
+            text-decoration: underline 2px;
+            font-size: 2em;
+            color: rgba(177, 43, 43, 0.822);
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            
+            background-image: url(https://www.ipadwallpaper.org/wp-content/uploads/2021/01/Soft-blur-gradient-dreamy-background-iPad-Wallpaper-1262x1262.jpg);
+            background-size: cover; 
+            align-items: center;  
+                    
+        }
+        .form{
+            
+            border-color: rgba(37, 37, 37, 0.712);
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            box-sizing: border-box;
+            margin-top: 5em;
+            padding: 1em 3em;
+            background-color: white;
+            border-radius: 5%;
+            width: 25%;
+        }
+        .input{
+            background-color: #e4b2b2;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            border-bottom: 2px solid var(--theme-color);
+            padding: 10px;
+
+        }
+        .submit{
+            display: block;
+            width: 100%;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+    <h3 class="contact">Contact Us!</h3>
+    
+    <form>
+        <label >Full Name</label>
+        <br>
+        <input class="input" type="text">
+        <br>
+        <label> Email</label>
+        <br>
+        <input class="input" type="email">
+        <br>
+        <label> Message</label>
+        <br>
+        <textarea class="input" rows="4">Enter Your Message</textarea>
+        <br>
+        <button class="submit">Submit</button>
+        <br>
+
+    </form>
+    </div>
+
+</body>
+</html>

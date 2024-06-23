@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking ticket</title>
+    <style>
+        .ticket{
+            border: 2px solid rgb(39, 137, 248);
+            background-color:beige;
+            width: 40%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+    <h1 style="color: rgb(7, 134, 253); text-decoration: underline 2px;">Movie Ticket Form</h1>
+    
+    <form>
+        <label> Full Name </label>
+        <br>
+        <input type="text">
+        <br><br>
+        <label> Phone Number</label>
+        <br>
+        <input type="number" required maxlength="10">
+        <br><br>
+       
+        <label>Date and time</label>
+        <br>
+        <input type="datetime-local">
+        <br><br>
+
+        <label> Numebr Of Seats</label>
+        <br>
+        <input type="number" required minlength="1">
+        <br><br>
+        <label> Select Movie</label>
+        <br>
+        <select> 
+            <option>avengers</option>
+            <option> spider man</option>
+            <option>jatt and juliet</option>
+            
+        </select>
+        <br><br>
+        <button>submit</button>
+        <br><br>
+    </form>
+    </div>
+</body>
+</html>

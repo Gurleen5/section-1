@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student admission form</h1>
+    <form>
+        <label>full name</label>
+        <input type="text" required minlength="10">
+        <br><br>
+        <label> email</label>
+        <input type="email">
+        <br><br>
+        <label> DOB</label>
+        <input type="date">
+        <br><br>
+        <label> gender</label>
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        <br><br>
+        <label> select course</label>
+        <select>
+            <option>MERN stack</option>
+            <option > pyhton</option>
+            <option > AI</option>
+            <option > data analytics</option>
+            <option > react native app development</option>
+        </select>
+        <br><br>
+        <label >select college</label>
+        <input type="text" list="college">
+        <datalist id="college">
+            <option>BBD</option>
+            <option>SRMU</option>
+            <option>integral</option>
+            <option>Amity</option>
+        </datalist>
+        <br><br>
+        <label> address</label>
+        <br>
+        <textarea rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="checkbox">
+        <label> i accept terms and conditions</label>
+        <br><br>
+        <details>
+            <summary>view terms and conditions</summary>
+            <p>Lorem ipsum dolor <mark> sit amet consectetur adipisicing elit</mark>. Reprehenderit, id quaerat beatae necessitatibus animi vel. Ut qui, natus laboriosam asperiores aliquam modi minima dolore obcaecati non odio iste quam vitae.</p>
+        </details>
+
+        <button>submit</button>
+
+
+    </form>
+</body>
+</html>
