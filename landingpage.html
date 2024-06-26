@@ -12,6 +12,7 @@
         :root{
             --theme-color: #007ddc;
             --theme-color-dark: rgb(14, 14, 116);
+            --accent-color: rgba(14, 14, 116, 0.185);
         }
         *{
             font-family: roboto;
@@ -107,18 +108,10 @@
            /* border: 2px solid red;*/
             background-color: var(--theme-color-dark);
             color: white;
-            /*height: 55vh;*/ 
+             
         }
         .contact-container{
             display: flex;
-        }
-        .text-input{
-            background-color: rgba(238, 227, 227, 0.726);
-            border: none;
-            border-radius: 3px;
-            display: flex;
-            box-sizing: border-box;
-            padding: 6px;
         }
         .right{
             padding: 30px 50px;
@@ -144,14 +137,6 @@
             padding-right: 120px;
             width: 50%;
         }
-        .submit-btn{
-            background-color: white;
-            color: var(--theme-color-dark);
-            border: none;
-            border-radius: 3px;
-            font-weight: bold;
-            display: flex;
-        }
         .center-middle{
             padding-right: 100px;
             padding-top: 30px;
@@ -176,9 +161,7 @@
             grid-template-columns: 1fr 2fr;
             align-items: center;
         }
-        .service-image{
-            /*border: 2px solid red;*/
-        }
+        
         .service-content{
             /*border: 2px solid var(--theme-color-dark);*/
             padding: 30px;
@@ -198,6 +181,52 @@
             display: grid;
             grid-template-columns: 1fr 2fr;
             align-items: center;
+        }
+        .form-body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 20px;
+            height: 80vh;
+            
+        }
+        .form-subtitle{
+            color: var(--theme-color-dark);
+            font-weight: bold; 
+            display: block;
+               
+        }
+        .text-input{
+            background-color: var(--accent-color);
+            border: none;
+            border-radius: 10px;
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+            border-bottom: 2px solid var(--theme-color-dark);
+            color: var(--theme-color-dark);
+            
+        }
+        h2{
+            text-decoration: underline; 
+            color: var(--theme-color-dark);
+            margin-bottom: 30px; 
+            text-align: center;
+        }
+        .form{
+            padding: 40px;
+            border-radius: 7px;
+            width: 40%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            border-color: var(--theme-color-dark);
+        }
+        .form-section{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
         }
 
     </style>
@@ -268,10 +297,27 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptate excepturi, magnam mollitia reiciendis voluptatibus, tempora rem quasi nisi unde voluptatum impedit nobis a. Laborum dolor vero sit nemo doloribus?</p>
                         <button class="btn btn-main">Read Now</button>
                     </div>
-
-                </div> 
+                </div>
+            <div class="form-section">
+                <div>
+                    <img src="contactus.png" alt="" style="width: 110%; margin-top: 100px;">
+                </div>
+                <div class="form-body">
+                    <form class="form">
+                        <h2>Contact Us</h2>
+                        <textarea class="text-input" placeholder="Full Name" inputmode="text"></textarea>
+                        <br>
+                        <textarea class="text-input" placeholder="Email" inputmode="email"></textarea>
+                        <br>
+                        <textarea class="text-input" placeholder="Phone Number" inputmode="numeric"></textarea>
+                        <br>
+                        <textarea class="text-input" rows="4" placeholder="Message" inputmode="text"></textarea>
+                        <br>
+                        <button class="btn btn-main">Submit</button>
+                    </form>
+                </div>
                 
-
+            </div>
             </section>
         </article>
     </main>
