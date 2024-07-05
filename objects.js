@@ -47,6 +47,13 @@ const smartphonearray=[
     ram:['6gb','8gb']
 },
     {
+    brand:'apple',
+    model:'iphone15',
+    price:59999,
+    colors:['blue','green','red'],
+    ram:['6gb','8gb']
+},
+    {
     brand:'MI',
     model:'poco X2',
     price:16000,
@@ -57,6 +64,13 @@ const smartphonearray=[
     brand:'samsung',
     model:'s24 ultra',
     price:110000,
+    colors:['silver','gold'],
+    ram:['32gb','8gb']
+},
+    {
+    brand:'samsung',
+    model:'a50',
+    price:21499,
     colors:['silver','gold'],
     ram:['32gb','8gb']
 },
@@ -81,8 +95,42 @@ console.log(smartphonearray[1].price);
 smartphonearray[2].colors.push('blue');
 console.log(smartphonearray[2].colors);
 //create an array containing all the brands
-const brand=smartphonearray.map((a)=>{ return a.brand})
-console.log(brand);
+const brandss=smartphonearray.map((a)=>{ return a.brand})
+console.log(brandss);
 //filter all smartphones containing white color
 const white=smartphonearray.filter((c)=>{ return c.colors.includes('white')});
 console.log(white);
+
+//filter all apple smartphones
+const keyword='s';
+const applephone=smartphonearray.filter((phone)=>{ return phone.brand.toLowerCase()===keyword.toLowerCase()})
+
+const applephone2=smartphonearray.filter((phone)=>{ return phone.brand.toLowerCase().includes(keyword.toLowerCase())})
+console.log(applephone2);
+
+const brands=smartphonearray.map((a)=>{ return a.brand})
+console.log(new Set(brands));
+//to reduce duplication 
+console.log(Array.from(new Set(brands)));
+console.log(Array.from('apple'));
+
+//sring interpolation
+
+let [ brand, model ,price ]=['apple','iphone16',79999];
+console.log(brand +' '+ model +'-'+ price);
+console.log(`${brand} ${model} ${price}`);
+
+const phonenames=smartphonearray.map((phone,index)=>{ return `${index+1}. ${phone.brand} ${phone.model} ${phone.price}`})
+console.log(phonenames);
+
+[
+    'apple iphone 16- white',
+    'apple iphone 16- green',
+    'apple iphone 16- black',
+    'apple iphone 15- red',
+]
+const allcolorphones= smartphonearray.map((phones)=>{return phones.colors.map((c)=>{return `${phones.brand} ${phones.model} (${c})`})})
+console.log(allcolorphones.flat());
+//spread (...) operator is used to avoid nested arrays in the output
+//flat used to convert multidimensional arrays to single dimensional array
+
