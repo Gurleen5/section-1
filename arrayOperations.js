@@ -32,4 +32,3 @@ for (let n of nums){
     }
 }
 console.log(even);
-

@@ -31,6 +31,7 @@ console.log(movies);
 movies.unshift('gangs of wasseypur')//adds element at the beginning
 console.log(movies);
 
+
 console.log(movies.pop());// removes element from the end
 console.log(movies.shift());//removes element from the beginning
 console.log(movies);

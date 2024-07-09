@@ -67,7 +67,7 @@ const palindrome=(a)=>{
         n=parseInt(a/10);
     }
     if (rev===a){
-        return ('palindome $rev')
+        return ('palindome')
     }
     else{
         return ('not palindrome')

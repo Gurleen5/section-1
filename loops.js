@@ -13,6 +13,7 @@ const k=10;
 do{
    console.log(k);
 }while(k>20);
+
 console.log('------for of loop-------');
 const nums=[234,654,576,3,56,34];
 for(let n of nums){
